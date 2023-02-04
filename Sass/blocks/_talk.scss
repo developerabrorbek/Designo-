@@ -1,0 +1,41 @@
+.talk {
+  position: relative;
+  z-index: 2;
+
+
+  &__inner {
+    padding: 64px 24px;
+    background: #e7816b;
+    background-image: url(../../images/talk-back2.png);
+    background-repeat: no-repeat;
+    background-position: -130px center;
+    border-radius: 15px;
+  }
+
+  &-more {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .talk {
+  
+    &__inner {
+      padding: 52px 52px;
+      background-image: none;
+    }
+
+    &-body{
+      
+      &__title{
+        margin-top: 0;
+        width: 335px;
+      }
+
+      &-subtitle{
+        width: 573px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

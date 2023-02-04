@@ -1,0 +1,89 @@
+.intro {
+  margin-bottom: 120px;
+  background: #e7816b;
+  padding-top: 70px;
+  background-image: url(../../images/Oval.png);
+  background-position: 0 108px;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    &__more {
+      padding: 17px 24px;
+      background-color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333136;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .intro {
+    padding-top: 60px;
+    background-image: url(../../images/Oval.png);
+    background-position: 200px 135px;
+  
+    
+  
+    &-body {
+  
+      &__title {
+        width: 573px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 8px;
+      }
+  
+      &__subtitle {
+        width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 19px;
+      }
+  
+      &__more {
+        margin-bottom: 69px;
+      }
+    }
+
+    &-img{
+      filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+    }
+  }
+  
+}

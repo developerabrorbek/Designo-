@@ -1,0 +1,133 @@
+.advantage {
+  margin-bottom: 60px;
+
+  &-lists {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    row-gap: 80px;
+  }
+
+  &-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+
+    &__body {
+      text-align: center;
+
+      &-title {
+        margin-top: 48px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #333136;
+      }
+
+      &-subtitle {
+        margin-top: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333136;
+      }
+    }
+
+    .oval-1 {
+      position: absolute;
+      top: -22px;
+      border-radius: 50%;
+      z-index: -1;
+      width: 202px;
+      height: 202px;
+      background: linear-gradient(
+        90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      mix-blend-mode: normal;
+      opacity: 0.2;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .oval-2 {
+      position: absolute;
+      top: -22px;
+      border-radius: 50%;
+      z-index: -1;
+      width: 202px;
+      height: 202px;
+      background: linear-gradient(
+        90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      mix-blend-mode: normal;
+      opacity: 0.2;
+      transform: matrix(0, 1, 1, 0, 0, 0);
+    }
+
+    .oval-3 {
+      position: absolute;
+      top: -20px;
+      border-radius: 50%;
+      z-index: -1;
+      width: 202px;
+      height: 202px;
+      background: linear-gradient(
+        90deg,
+        rgba(93, 2, 2, 0.0001) 0%,
+        rgba(93, 2, 2, 0.497569) 100%
+      );
+      mix-blend-mode: normal;
+      opacity: 0.2;
+      transform: matrix(0, -1, -1, 0, 0, 0);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .advantage {
+        margin-bottom: 67px;
+        background-image: url(../../images/advantage-tablet-back.png);
+        background-repeat: no-repeat;
+        background-position: 44px 40px;
+      
+      
+        &-lists {
+          row-gap: 56px;
+        }
+      
+        &-list {
+          width: 100%;
+          margin-bottom: 0;
+          justify-content: space-between;
+          flex-direction: row;
+      
+          &__body {
+            width: 439px;
+            text-align: left;
+      
+            &-title {
+              margin-top: 34px;
+              margin-bottom: 0;
+              text-align: left;
+            }
+      
+            &-subtitle {
+              margin-top: 16px;
+              text-align: left;
+            }
+          }
+        }
+      }
+}
