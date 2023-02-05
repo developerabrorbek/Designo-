@@ -1,0 +1,198 @@
+.hero {
+  margin-bottom: 120px;
+  background-color: #e7816b;
+  background-image: url(../../images/hero-phone-back.png);
+  background-position: center -5px;
+  background-repeat: no-repeat;
+
+  &__inner {
+    padding: 72px 0;
+  }
+
+  &-body {
+    text-align: center;
+
+    &__title {
+      margin: 0 0 24px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: inherit;
+      color: #ffffff;
+    }
+
+    &__subtitle {
+      margin: 0 0 48px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: inherit;
+      color: #ffffff;
+    }
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: inherit;
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+    }
+
+
+    &__username {
+      border: none;
+      padding: 25px 14px 11px;
+      border-bottom: 1px solid #fff;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+
+    }
+
+    &__email {
+      border: none;
+      padding: 25px 14px 11px;
+      border-bottom: 1px solid #fff;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+
+    &__phone {
+      border: none;
+      padding: 25px 14px 11px;
+      border-bottom: 1px solid #fff;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+
+    &__message {
+      border: none;
+      padding: 25px 14px 75px;
+      border-bottom: 1px solid #fff;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+
+    &__btn {
+      padding: 18px 47px 16px 48px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      border: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333136;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-color: #fff;
+        background-image: none;
+        background-position: left top;
+
+      
+        &__inner {
+            background-color: #e7816b;
+            background-image: url(../../images/hero-tablet-back.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            border-radius: 15px;
+            padding: 71px 58px;
+        }
+      
+        &-body {
+          text-align: left;
+      
+          &__title {
+            margin: 0 0 32px;
+            font-size: 48px;
+            line-height: 48px;
+          }
+      
+          &__subtitle {
+            margin: 0 0 40px;
+          }
+        }
+      
+        &-form {
+          align-items: flex-end;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero {
+        background-image: none;
+
+      
+        &__inner {
+            background-image: url(../../images/hero-pc-back.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding: 54px 96px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+      
+        &-body {
+            width: 445px;
+      
+          &__subtitle {
+            margin: 0;
+          }
+        }
+      
+        &-form {
+            width: 380px;
+        }
+    }
+}

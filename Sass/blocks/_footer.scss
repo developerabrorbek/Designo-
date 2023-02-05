@@ -4,8 +4,16 @@
   top: -189px;
   background: #1d1c1e;
 
+  &-contact{
+    position: static;
+  }
+
   &__inner {
     padding: 253px 0 64px;
+  }
+
+  &-contact__inner{
+    padding: 64px 0 64px;
   }
 
   &-logo {
@@ -132,6 +140,10 @@
     &__inner {
       padding: 166px 0 80px;
     }
+
+    &-contact__inner{
+      padding: 80px 0 80px;
+    }
   
     &-logo {
       flex-direction: row;
@@ -179,6 +191,10 @@
     &__inner {
       width: 1111px;
       padding: 144px 0 72px;
+    }
+
+    &-contact__inner{
+      padding: 72px 0 73px;
     }
   }
 }
