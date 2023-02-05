@@ -1,9 +1,6 @@
 .guide {
   margin-bottom: 120px;
 
-  &__inner {
-  }
-
   &-cards {
     display: grid;
     row-gap: 24px;
@@ -12,7 +9,6 @@
 
   &-card {
     position: relative;
-    // height: 250px;
     padding: 84px 37px;
     border-radius: 15px;
     overflow: hidden;
@@ -40,23 +36,18 @@
 
     &:nth-child(1) {
       @include bg-img("../../images/guide1-phone.jpg", center);
-      // background-image: url(../../images/guide1-phone.jpg);
       background-size: cover;
-      // background-position: center;
     }
 
     &:nth-child(2) {
       @include bg-img("../../images/guide2-phone.jpg", center);
-      // background-image: url(../../images/guide2-phone.jpg);
       background-size: cover;
-      // background-position: center;
     }
 
     &:nth-child(3) {
       @include bg-img("../../images/guide3-phone.jpg", center);
-      // background-image: url(../../images/guide3-phone.jpg);
       background-size: cover;
-      // background-position: center;
+ 
     }
 
     &__body {
@@ -104,18 +95,15 @@
       border-radius: 15px;
 
       &:nth-child(1) {
-        @include bg-img("../../images/guide-1-tablet.jpg", center);
-        // background-image: url(../../images/guide-1-tablet.png);
+        @include bg-img("../../images/guide-1-tablet.png", center);
       }
 
       &:nth-child(2) {
         @include bg-img("../../images/guide-2-tablet.jpg", center);
-        // background-image: url(../../images/guide-2-tablet.jpg);
       }
 
       &:nth-child(3) {
         @include bg-img("../../images/guide-3-tablet.jpg", center);
-        // background-image: url(../../images/guide-3-tablet.jpg);
       }
 
       &__body {

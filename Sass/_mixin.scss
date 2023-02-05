@@ -1,8 +1,8 @@
 @mixin bg-img($url, $position){
-    background-image: $url;
+    background-image: url($url);
     background-repeat: no-repeat;
     background-position: $position;
-}
+};
 
 
 .link{
