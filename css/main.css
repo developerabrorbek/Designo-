@@ -321,6 +321,13 @@ template {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Jost";
+  src: url("Jost-Bold.woff2") format("woff2"), url("Jost-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 /* GENERAL */
 * {
   box-sizing: border-box;
@@ -369,6 +376,11 @@ img {
   overflow: hidden;
 }
 
+body {
+  font-family: "Jost";
+  font-style: normal;
+}
+
 .container {
   min-width: 320px;
   width: 100%;
@@ -394,11 +406,6 @@ img {
     padding: 0 44px;
   }
 }
-body {
-  font-family: "Jost";
-  font-style: normal;
-}
-
 .header__inner {
   display: flex;
   align-items: center;
@@ -465,6 +472,11 @@ body {
   letter-spacing: 2px;
   color: inherit;
   text-decoration: none;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.header .nav-item__link:hover {
+  text-decoration-line: underline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -557,6 +569,11 @@ body {
   text-transform: uppercase;
   color: #333136;
   margin-bottom: 30px;
+  transition: all 0.1s ease;
+}
+.intro-body__more:hover {
+  background-color: #FFAD9B;
+  color: #FFFFFF;
 }
 
 @media only screen and (min-width: 768px) {
@@ -639,6 +656,22 @@ body {
   overflow: hidden;
   text-align: center;
   background-repeat: no-repeat;
+}
+.guide-card:hover .hover-effect {
+  display: block;
+  cursor: pointer;
+}
+.guide-card .hover-effect {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #E7816B;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .guide-card:nth-child(1) {
   background-image: url(../../images/guide1-phone.jpg);
@@ -892,6 +925,11 @@ body {
 }
 .talk-more {
   margin-bottom: 0;
+  transition: all 0.2s ease;
+}
+.talk-more:hover {
+  background: #FFAD9B;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -964,6 +1002,9 @@ body {
 .footer-logo__nav--item {
   color: #ffffff;
 }
+.footer-logo__nav--item:hover {
+  text-decoration-line: underline;
+}
 .footer-logo__nav--item-link {
   font-style: normal;
   font-weight: 400;
@@ -1031,6 +1072,9 @@ body {
 }
 .footer-body__social-link {
   color: #E7816B;
+}
+.footer-body__social-link:hover {
+  color: #FFAD9B;
 }
 
 @media only screen and (min-width: 768px) {

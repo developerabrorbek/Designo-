@@ -1,7 +1,3 @@
-body {
-  font-family: "Jost";
-  font-style: normal;
-}
 
 .header {
   &__inner {
@@ -37,6 +33,8 @@ body {
       border: 1px solid rgba(51, 51, 51, 0.705);
       color: #333136;
 
+      
+
       &-link {
         text-decoration: none;
         font-weight: 400;
@@ -71,6 +69,10 @@ body {
 
     &-item {
       color: #333136;
+      
+      
+
+      
 
       &__link {
         font-style: normal;
@@ -80,6 +82,12 @@ body {
         letter-spacing: 2px;
         color: inherit;
         text-decoration: none;
+        transition: all 1s ease;
+        cursor: pointer;
+
+        &:hover{
+          text-decoration-line: underline;
+        }
       }
     }
   }

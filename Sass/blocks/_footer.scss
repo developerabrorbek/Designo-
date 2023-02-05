@@ -33,6 +33,10 @@
       &--item {
         color: #ffffff;
 
+        &:hover{
+          text-decoration-line: underline;
+        }
+
         &-link {
           font-style: normal;
           font-weight: 400;
@@ -112,6 +116,10 @@
 
       &-link{
         color: #E7816B;
+
+        &:hover{
+          color: #FFAD9B;
+        }
       }
     }
   }

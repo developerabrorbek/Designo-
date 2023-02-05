@@ -18,6 +18,25 @@
     overflow: hidden;
     text-align: center;
     background-repeat: no-repeat;
+    
+
+    &:hover .hover-effect{
+      display: block;
+      cursor: pointer;
+    }
+
+    .hover-effect{
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #E7816B;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
 
     &:nth-child(1) {
       background-image: url(../../images/guide1-phone.jpg);
