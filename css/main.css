@@ -363,6 +363,14 @@ img {
   flex-grow: 1;
 }
 
+.link, .header .nav-item__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -394,10 +402,22 @@ body {
     padding: 0 24px;
   }
 }
+@media only screen and (min-width: 576px) {
+  .container {
+    min-width: 576px;
+    padding: 0 20px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .container {
     min-width: 768px;
     padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    min-width: 992px;
+    padding: 0 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -427,36 +447,6 @@ body {
   border: none;
   transition: all 1s ease;
 }
-.header-menu__items {
-  display: none;
-  position: absolute;
-  top: 8px;
-  left: -150px;
-  width: 190px;
-  background-color: #fff;
-  overflow: hidden;
-  list-style-type: none;
-  z-index: 3;
-}
-.header-menu__item {
-  padding: 8px 6px;
-  border: 1px solid rgba(51, 51, 51, 0.705);
-  color: #333136;
-}
-.header-menu__item-link {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 2px;
-  color: inherit;
-}
-.header-menu__item:hover {
-  text-decoration-line: underline;
-}
-.header-menu:hover .header-menu__items {
-  display: block;
-}
 .header .nav {
   display: none;
   width: 370px;
@@ -472,11 +462,6 @@ body {
   color: #333136;
 }
 .header .nav-item__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 2px;
   color: inherit;
   text-decoration: none;
   transition: all 1s ease;
@@ -511,11 +496,6 @@ body {
     color: #333136;
   }
   .header .nav-item__link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 2px;
     color: inherit;
     text-decoration: none;
   }
@@ -613,7 +593,9 @@ body {
 @media only screen and (min-width: 768px) {
   .intro {
     margin-top: 164px;
-    background-image: url(../../images/Oval.png);
+    background-image: "../../images/Oval.png";
+    background-repeat: no-repeat;
+    background-position: right center;
   }
   .intro__inner {
     padding-top: 60px;
@@ -639,7 +621,8 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .intro {
-    background-image: url(../../images/Oval.png);
+    background-image: "../../images/Oval.png";
+    background-repeat: no-repeat;
     background-position: center bottom;
   }
   .intro-body__more {
@@ -654,9 +637,9 @@ body {
   }
   .intro__inner {
     background: #e7816b;
-    background-image: url(../../images/Oval.png);
-    background-position: right center;
+    background-image: "../../images/Oval.png";
     background-repeat: no-repeat;
+    background-position: right center;
     border-radius: 15px;
     width: 1111px;
     padding: 120px 95px 0;
@@ -718,19 +701,22 @@ body {
   z-index: 1;
 }
 .guide-card:nth-child(1) {
-  background-image: url(../../images/guide1-phone.jpg);
-  background-size: cover;
+  background-image: "../../images/guide1-phone.jpg";
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .guide-card:nth-child(2) {
-  background-image: url(../../images/guide2-phone.jpg);
-  background-size: cover;
+  background-image: "../../images/guide2-phone.jpg";
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .guide-card:nth-child(3) {
-  background-image: url(../../images/guide3-phone.jpg);
-  background-size: cover;
+  background-image: "../../images/guide3-phone.jpg";
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .guide-card__body {
   position: relative;
@@ -771,13 +757,19 @@ body {
     border-radius: 15px;
   }
   .guide-card:nth-child(1) {
-    background-image: url(../../images/guide-1-tablet.png);
+    background-image: "../../images/guide-1-tablet.jpg";
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .guide-card:nth-child(2) {
-    background-image: url(../../images/guide-2-tablet.jpg);
+    background-image: "../../images/guide-2-tablet.jpg";
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .guide-card:nth-child(3) {
-    background-image: url(../../images/guide-3-tablet.jpg);
+    background-image: "../../images/guide-3-tablet.jpg";
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .guide-card__body-title {
     margin-bottom: 24px;
@@ -808,7 +800,9 @@ body {
   .guide-card:nth-child(1) {
     grid-area: first;
     padding: 273px 88px;
-    background-image: url(../../images/guide-1-pc.png);
+    background-image: "../../images/guide-1-pc.png";
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .guide-card:nth-child(2) {
     grid-area: second;
@@ -899,7 +893,7 @@ body {
 @media only screen and (min-width: 768px) {
   .advantage {
     margin-bottom: 67px;
-    background-image: url(../../images/advantage-tablet-back.png);
+    background-image: "../../images/advantage-tablet-back.png";
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1210,11 +1204,12 @@ body {
   }
 }
 .hero {
+  margin-top: 84px;
   margin-bottom: 120px;
   background-color: #e7816b;
-  background-image: url(../../images/hero-phone-back.png);
-  background-position: center -5px;
+  background-image: "../../images/hero-phone-back.png";
   background-repeat: no-repeat;
+  background-position: center -5px;
 }
 .hero__inner {
   padding: 72px 0;
@@ -1369,7 +1364,7 @@ body {
   }
   .hero__inner {
     background-color: #e7816b;
-    background-image: url(../../images/hero-tablet-back.png);
+    background-image: "../../images/hero-tablet-back.png";
     background-repeat: no-repeat;
     background-position: left top;
     border-radius: 15px;
@@ -1392,13 +1387,14 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .hero {
+    margin-top: 164px;
     background-color: #fff;
     background-image: none;
     background-position: left top;
   }
   .hero__inner {
     background-color: #e7816b;
-    background-image: url(../../images/hero-tablet-back.png);
+    background-image: "../../images/hero-tablet-back.png";
     background-repeat: no-repeat;
     background-position: left top;
     border-radius: 15px;
@@ -1426,10 +1422,11 @@ body {
 }
 @media only screen and (min-width: 1200px) {
   .hero {
+    margin-top: 184px;
     background-image: none;
   }
   .hero__inner {
-    background-image: url(../../images/hero-pc-back.png);
+    background-image: "../../images/hero-pc-back.png";
     background-repeat: no-repeat;
     background-position: left top;
     padding: 54px 96px;

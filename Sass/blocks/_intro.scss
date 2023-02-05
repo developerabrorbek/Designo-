@@ -103,7 +103,7 @@
 @media only screen and (min-width: 768px) {
   .intro {
     margin-top: 164px;
-    @include bg-img("../../images/Oval.png, right center");
+    @include bg-img("../../images/Oval.png", right center);
  
   
     &__inner{
