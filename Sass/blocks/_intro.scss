@@ -64,10 +64,46 @@
 }
 
 
+@media only screen and (min-width: 576px) {
+  .intro {
+    background-position: right center;
+  
+    &__inner{
+      padding-top: 60px;
+    }
+  
+    &-body {
+      
+  
+      &__title {
+        width: 573px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 8px;
+      }
+  
+      &__subtitle {
+        width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 39px;
+      }
+  
+      &__more {
+        margin-bottom: 48px;
+      }
+    }
+
+    &-img{
+      filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+    }
+  }
+  
+}
+
 @media only screen and (min-width: 768px) {
   .intro {
     background-image: url(../../images/Oval.png);
-    background-position: 200px 135px;
   
     &__inner{
       padding-top: 60px;
@@ -98,6 +134,23 @@
     &-img{
       filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
     }
+  }
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .intro {
+    background-image: url(../../images/Oval.png);
+    background-position: center bottom;
+  
+  
+    &-body {
+  
+      &__more {
+        margin-bottom: 0px;
+      }
+    }
+
   }
   
 }

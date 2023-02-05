@@ -576,10 +576,35 @@ body {
   color: #FFFFFF;
 }
 
+@media only screen and (min-width: 576px) {
+  .intro {
+    background-position: right center;
+  }
+  .intro__inner {
+    padding-top: 60px;
+  }
+  .intro-body__title {
+    width: 573px;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+  .intro-body__subtitle {
+    width: 445px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 39px;
+  }
+  .intro-body__more {
+    margin-bottom: 48px;
+  }
+  .intro-img {
+    filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+  }
+}
 @media only screen and (min-width: 768px) {
   .intro {
     background-image: url(../../images/Oval.png);
-    background-position: 200px 135px;
   }
   .intro__inner {
     padding-top: 60px;
@@ -601,6 +626,15 @@ body {
   }
   .intro-img {
     filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+  }
+}
+@media only screen and (min-width: 992px) {
+  .intro {
+    background-image: url(../../images/Oval.png);
+    background-position: center bottom;
+  }
+  .intro-body__more {
+    margin-bottom: 0px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -740,6 +774,11 @@ body {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 2px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .guide-card {
+    max-width: 1000px;
   }
 }
 @media only screen and (min-width: 1200px) {
