@@ -1201,6 +1201,12 @@ body {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+.hero-form__username:focus {
+  border-bottom: 2px solid #fff;
+}
+.hero-form__username:focus::placeholder {
+  opacity: 1;
+}
 .hero-form__email {
   border: none;
   padding: 25px 14px 11px;
@@ -1214,6 +1220,12 @@ body {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+.hero-form__email:focus {
+  border-bottom: 2px solid #fff;
+}
+.hero-form__email:focus::placeholder {
+  opacity: 1;
 }
 .hero-form__phone {
   border: none;
@@ -1229,6 +1241,12 @@ body {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+.hero-form__phone:focus {
+  border-bottom: 2px solid #fff;
+}
+.hero-form__phone:focus::placeholder {
+  opacity: 1;
+}
 .hero-form__message {
   border: none;
   padding: 25px 14px 75px;
@@ -1242,6 +1260,12 @@ body {
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
+}
+.hero-form__message:focus {
+  border-bottom: 2px solid #fff;
+}
+.hero-form__message:focus::placeholder {
+  opacity: 1;
 }
 .hero-form__btn {
   padding: 18px 47px 16px 48px;

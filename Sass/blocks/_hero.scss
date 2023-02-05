@@ -63,6 +63,14 @@
         opacity: 0.5;
       }
 
+      &:focus{
+        border-bottom: 2px solid #fff;
+      }
+
+      &:focus::placeholder{
+        opacity: 1;
+      }
+
     }
 
     &__email {
@@ -78,6 +86,14 @@
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.5;
+      }
+
+      &:focus{
+        border-bottom: 2px solid #fff;
+      }
+
+      &:focus::placeholder{
+        opacity: 1;
       }
     }
 
@@ -95,6 +111,14 @@
         mix-blend-mode: normal;
         opacity: 0.5;
       }
+
+      &:focus{
+        border-bottom: 2px solid #fff;
+      }
+
+      &:focus::placeholder{
+        opacity: 1;
+      }
     }
 
     &__message {
@@ -110,6 +134,14 @@
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.5;
+      }
+
+      &:focus{
+        border-bottom: 2px solid #fff;
+      }
+
+      &:focus::placeholder{
+        opacity: 1;
       }
     }
 
