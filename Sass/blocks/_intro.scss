@@ -1,15 +1,21 @@
 .intro {
   margin-bottom: 120px;
   background: #e7816b;
-  padding-top: 70px;
   background-image: url(../../images/Oval.png);
   background-position: 0 108px;
   background-repeat: no-repeat;
 
   &__inner {
+    padding-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+  }
+
+  &-img{
+    position: relative;
+    bottom: -50px;
   }
 
   &-body {
@@ -46,7 +52,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #333136;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -54,13 +60,15 @@
 
 @media only screen and (min-width: 768px) {
   .intro {
-    padding-top: 60px;
     background-image: url(../../images/Oval.png);
     background-position: 200px 135px;
   
-    
+    &__inner{
+      padding-top: 60px;
+    }
   
     &-body {
+      
   
       &__title {
         width: 573px;
@@ -86,4 +94,51 @@
     }
   }
   
+}
+
+@media only screen and (min-width: 1200px) {
+  .intro {
+    background: none;
+    margin-bottom: 160px;
+
+    &__inner{
+      background: #e7816b;
+      background-image: url(../../images/Oval.png);
+      background-position: right center;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      width: 1111px;
+      padding: 120px 95px 0;
+      flex-direction: row;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    &-img{
+      transform: scale(1.8);
+      bottom: 0;
+    }
+  
+    
+  
+    &-body {
+      padding-bottom: 145px;
+      align-items: flex-start;
+  
+      &__title {
+        width: 540px;
+        text-align: left;
+        margin-bottom: 11px;
+      }
+  
+      &__subtitle {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+  
+      &__more {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

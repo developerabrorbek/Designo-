@@ -104,3 +104,39 @@
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .guide {
+
+    margin-bottom: 160px;
+
+    &-cards {
+      display: grid;
+      row-gap: 24px;
+      column-gap: 30px;
+      grid-template-areas:
+        "first second"
+        "first third";
+      // align-items: center;
+    }
+
+    &-card {
+      padding: 107px 88px;
+      border-radius: 15px;
+
+      &:nth-child(1) {
+        grid-area: first;
+        padding: 273px 88px;
+        background-image: url(../../images/guide-1-pc.png);
+      }
+
+      &:nth-child(2) {
+        grid-area: second;
+      }
+
+      &:nth-child(3) {
+        grid-area: third;
+      }
+    }
+  }
+}

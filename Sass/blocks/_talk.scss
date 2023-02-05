@@ -26,6 +26,8 @@
     }
 
     &-body{
+
+      padding: 0;
       
       &__title{
         margin-top: 0;
@@ -39,3 +41,34 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 1200px) {
+  .talk {
+  
+    &__inner {
+      padding: 48px 95px;
+      background-image: url(../../images/talk-back-3.png);
+      background-position: 236px center;
+    }
+
+    &-body{
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      
+      &__title{
+        margin-top: 0;
+        width: 320px;
+      }
+
+      &-subtitle{
+        width: 459px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+

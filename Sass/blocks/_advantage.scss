@@ -17,6 +17,11 @@
     flex-direction: column;
     margin-left: 0;
 
+    &__image{
+      width: 202px;
+      height: 202px;
+    }
+
     &__body {
       text-align: center;
 
@@ -118,7 +123,7 @@
             text-align: left;
       
             &-title {
-              margin-top: 34px;
+              margin-top: 12px;
               margin-bottom: 0;
               text-align: left;
             }
@@ -130,4 +135,47 @@
           }
         }
       }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .advantage {
+      margin-bottom: 160px;
+      background-image: none;
+    
+    
+      &-lists {
+        justify-content: space-between;
+        flex-direction: row;
+        row-gap: 0;
+      }
+    
+      &-list {
+        width: 350px;
+        align-items: center;
+        flex-direction: column;
+
+        &__image{
+          width: 202px;
+          height: 202px;
+        }
+    
+        &__body {
+          margin-top: 46px;
+          width: 350px;
+          text-align: center;
+    
+          &-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: inherit;
+          }
+    
+          &-subtitle {
+            margin-top: 30px;
+            text-align: inherit;
+          }
+        }
+      }
+    }
 }
