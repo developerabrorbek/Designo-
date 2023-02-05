@@ -1292,6 +1292,42 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 385px) {
+  .hero {
+    background-color: none;
+    background-image: none;
+    background-position: left top;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero {
+    background-color: #fff;
+    background-image: none;
+    background-position: left top;
+  }
+  .hero__inner {
+    background-color: #e7816b;
+    background-image: url(../../images/hero-tablet-back.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    border-radius: 15px;
+    padding: 71px 58px;
+  }
+  .hero-body {
+    text-align: left;
+  }
+  .hero-body__title {
+    margin: 0 0 32px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .hero-body__subtitle {
+    margin: 0 0 40px;
+  }
+  .hero-form {
+    align-items: flex-end;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero {
     background-color: #fff;
@@ -1319,6 +1355,11 @@ body {
   }
   .hero-form {
     align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-form {
+    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 1200px) {
