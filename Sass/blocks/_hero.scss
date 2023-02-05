@@ -1,8 +1,9 @@
 .hero {
+  margin-top: 84px;
   margin-bottom: 120px;
   background-color: #e7816b;
   @include bg-img("../../images/hero-phone-back.png", center -5px);
-  
+
   &__inner {
     padding: 72px 0;
   }
@@ -211,6 +212,7 @@
 
 @media only screen and (min-width: 768px) {
     .hero {
+      margin-top: 164px;
         background-color: #fff;
         background-image: none;
         background-position: left top;
@@ -254,6 +256,7 @@
 
 @media only screen and (min-width: 1200px) {
     .hero {
+      margin-top: 184px;
         background-image: none;
 
       
