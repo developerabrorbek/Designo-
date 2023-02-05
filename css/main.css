@@ -406,6 +406,13 @@ body {
     padding: 0 44px;
   }
 }
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 2px #ccc;
+  z-index: 3;
+}
 .header__inner {
   display: flex;
   align-items: center;
@@ -519,11 +526,12 @@ body {
   }
 }
 .intro {
+  margin-top: 84px;
   margin-bottom: 120px;
   background: #e7816b;
-  background-image: url(../../images/Oval.png);
-  background-position: 0 108px;
+  background-image: "../../images/Oval.png";
   background-repeat: no-repeat;
+  background-position: 0 108px;
 }
 .intro__inner {
   padding-top: 70px;
@@ -604,6 +612,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .intro {
+    margin-top: 164px;
     background-image: url(../../images/Oval.png);
   }
   .intro__inner {
@@ -639,6 +648,7 @@ body {
 }
 @media only screen and (min-width: 1200px) {
   .intro {
+    margin-top: 184px;
     background: none;
     margin-bottom: 160px;
   }
@@ -958,7 +968,7 @@ body {
 .talk__inner {
   padding: 64px 24px;
   background: #e7816b;
-  background-image: url(../../images/talk-back2.png);
+  background-image: "../../images/talk-back2.png";
   background-repeat: no-repeat;
   background-position: right center;
   border-radius: 15px;
@@ -1008,7 +1018,8 @@ body {
 @media only screen and (min-width: 1200px) {
   .talk__inner {
     padding: 38px 95px;
-    background-image: url(../../images/talk-back-3.png);
+    background-image: "../../images/talk-back-3.png";
+    background-repeat: no-repeat;
     background-position: 236px center;
   }
   .talk-body {

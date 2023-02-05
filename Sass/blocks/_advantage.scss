@@ -103,9 +103,7 @@
 @media only screen and (min-width: 768px) {
     .advantage {
         margin-bottom: 67px;
-        background-image: url(../../images/advantage-tablet-back.png);
-        background-repeat: no-repeat;
-        background-position: center;
+        @include bg-img("../../images/advantage-tablet-back.png", center);
       
       
         &-lists {

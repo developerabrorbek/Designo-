@@ -6,9 +6,7 @@
   &__inner {
     padding: 64px 24px;
     background: #e7816b;
-    background-image: url(../../images/talk-back2.png);
-    background-repeat: no-repeat;
-    background-position: right center;
+    @include bg-img("../../images/talk-back2.png", right center);
     border-radius: 15px;
   }
 
@@ -83,8 +81,7 @@
   
     &__inner {
       padding: 38px 95px;
-      background-image: url(../../images/talk-back-3.png);
-      background-position: 236px center;
+      @include bg-img("../../images/talk-back-3.png", 236px center);
     }
 
     &-body{

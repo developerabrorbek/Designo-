@@ -1,10 +1,8 @@
 .hero {
   margin-bottom: 120px;
   background-color: #e7816b;
-  background-image: url(../../images/hero-phone-back.png);
-  background-position: center -5px;
-  background-repeat: no-repeat;
-
+  @include bg-img("../../images/hero-phone-back.png", center -5px);
+  
   &__inner {
     padding: 72px 0;
   }
@@ -186,9 +184,7 @@
       
         &__inner {
             background-color: #e7816b;
-            background-image: url(../../images/hero-tablet-back.png);
-            background-repeat: no-repeat;
-            background-position: left top;
+            @include bg-img("../../images/hero-tablet-back.png", left top);
             border-radius: 15px;
             padding: 71px 58px;
         }
@@ -222,9 +218,7 @@
       
         &__inner {
             background-color: #e7816b;
-            background-image: url(../../images/hero-tablet-back.png);
-            background-repeat: no-repeat;
-            background-position: left top;
+            @include bg-img("../../images/hero-tablet-back.png", left top);
             border-radius: 15px;
             padding: 71px 58px;
         }
@@ -264,9 +258,7 @@
 
       
         &__inner {
-            background-image: url(../../images/hero-pc-back.png);
-            background-repeat: no-repeat;
-            background-position: left top;
+          @include bg-img("../../images/hero-pc-back.png", left top);
             padding: 54px 96px;
             display: flex;
             justify-content: space-between;

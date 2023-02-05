@@ -1,9 +1,8 @@
 .intro {
+  margin-top: 84px;
   margin-bottom: 120px;
   background: #e7816b;
-  background-image: url(../../images/Oval.png);
-  background-position: 0 108px;
-  background-repeat: no-repeat;
+  @include bg-img("../../images/Oval.png", 0 108px);
 
   &__inner {
     padding-top: 70px;
@@ -103,7 +102,9 @@
 
 @media only screen and (min-width: 768px) {
   .intro {
-    background-image: url(../../images/Oval.png);
+    margin-top: 164px;
+    @include bg-img("../../images/Oval.png, right center");
+ 
   
     &__inner{
       padding-top: 60px;
@@ -140,8 +141,8 @@
 
 @media only screen and (min-width: 992px) {
   .intro {
-    background-image: url(../../images/Oval.png);
-    background-position: center bottom;
+    @include bg-img("../../images/Oval.png", center bottom);
+
   
   
     &-body {
@@ -157,14 +158,13 @@
 
 @media only screen and (min-width: 1200px) {
   .intro {
+    margin-top: 184px;
     background: none;
     margin-bottom: 160px;
 
     &__inner{
       background: #e7816b;
-      background-image: url(../../images/Oval.png);
-      background-position: right center;
-      background-repeat: no-repeat;
+      @include bg-img("../../images/Oval.png", right center);
       border-radius: 15px;
       width: 1111px;
       padding: 120px 95px 0;

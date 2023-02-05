@@ -1,5 +1,12 @@
 
 .header {
+
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 2px #ccc;
+  z-index: 3;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -15,46 +22,8 @@
       border: none;
       transition: all 1s ease;
     }
-
-    &__items {
-      display: none;
-      position: absolute;
-      top: 8px;
-      left: -150px;
-      width: 190px;
-      background-color: #fff;
-      overflow: hidden;
-      list-style-type: none;
-      z-index: 3;
-    }
-
-    &__item {
-      padding: 8px 6px;
-      border: 1px solid rgba(51, 51, 51, 0.705);
-      color: #333136;
-
-      
-
-      &-link {
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 2px;
-        color: inherit;
-      }
-
-      &:hover {
-        text-decoration-line: underline;
-      }
-    }
-
-    &:hover &__items {
-      display: block;
-    }
-
-    
   }
+
   .nav {
     display: none;
     width: 370px;
@@ -75,11 +44,7 @@
       
 
       &__link {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 2px;
+        @extend .link;
         color: inherit;
         text-decoration: none;
         transition: all 1s ease;
@@ -94,82 +59,6 @@
 }
 
 
-// @media only screen and (min-width: 576px) {
-//   .header {
-//     &__inner {
-//       padding: 45px 0;
-//     }
-
-//     &-menu {
-//       position: relative;
-
-//       &__btn {
-//         display: block;
-//       }
-
-//       &__items {
-//         display: block;
-//         position: absolute;
-//         top: 8px;
-//         left: -150px;
-//         width: 190px;
-//         background-color: #fff;
-//         overflow: hidden;
-//         list-style-type: none;
-//         z-index: 3;
-//       }
-  
-//       &__item {
-//         padding: 8px 6px;
-//         border: 1px solid rgba(51, 51, 51, 0.705);
-//         color: #333136;
-//         //   transition: all 1s ease;
-  
-//         &-link {
-//           text-decoration: none;
-//           font-weight: 400;
-//           font-size: 14px;
-//           line-height: 14px;
-//           letter-spacing: 2px;
-//           color: inherit;
-//         }
-  
-//         &:hover {
-//           text-decoration-line: underline;
-//         }
-
-      
-//     }
-
-//     .nav {
-//       display: none;
-//       width: 370px;
-
-//       &-items {
-//         width: 100%;
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         list-style-type: none;
-//       }
-
-//       &-item {
-//         color: #333136;
-
-//         &__link {
-//           font-style: normal;
-//           font-weight: 400;
-//           font-size: 14px;
-//           line-height: 14px;
-//           letter-spacing: 2px;
-//           color: inherit;
-//           text-decoration: none;
-//         }
-//       }
-//     }
-//   }
-// }
-// }
 
 @media only screen and (min-width: 768px) {
   .header {
@@ -203,11 +92,7 @@
         color: #333136;
 
         &__link {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 14px;
-          letter-spacing: 2px;
+          @extend .link;
           color: inherit;
           text-decoration: none;
         }

@@ -39,21 +39,24 @@
     }
 
     &:nth-child(1) {
-      background-image: url(../../images/guide1-phone.jpg);
+      @include bg-img("../../images/guide1-phone.jpg", center);
+      // background-image: url(../../images/guide1-phone.jpg);
       background-size: cover;
-      background-position: center;
+      // background-position: center;
     }
 
     &:nth-child(2) {
-      background-image: url(../../images/guide2-phone.jpg);
+      @include bg-img("../../images/guide2-phone.jpg", center);
+      // background-image: url(../../images/guide2-phone.jpg);
       background-size: cover;
-      background-position: center;
+      // background-position: center;
     }
 
     &:nth-child(3) {
-      background-image: url(../../images/guide3-phone.jpg);
+      @include bg-img("../../images/guide3-phone.jpg", center);
+      // background-image: url(../../images/guide3-phone.jpg);
       background-size: cover;
-      background-position: center;
+      // background-position: center;
     }
 
     &__body {
@@ -101,15 +104,18 @@
       border-radius: 15px;
 
       &:nth-child(1) {
-        background-image: url(../../images/guide-1-tablet.png);
+        @include bg-img("../../images/guide-1-tablet.jpg", center);
+        // background-image: url(../../images/guide-1-tablet.png);
       }
 
       &:nth-child(2) {
-        background-image: url(../../images/guide-2-tablet.jpg);
+        @include bg-img("../../images/guide-2-tablet.jpg", center);
+        // background-image: url(../../images/guide-2-tablet.jpg);
       }
 
       &:nth-child(3) {
-        background-image: url(../../images/guide-3-tablet.jpg);
+        @include bg-img("../../images/guide-3-tablet.jpg", center);
+        // background-image: url(../../images/guide-3-tablet.jpg);
       }
 
       &__body {
@@ -145,7 +151,6 @@
       grid-template-areas:
         "first second"
         "first third";
-      // align-items: center;
     }
 
     &-card {
@@ -155,7 +160,7 @@
       &:nth-child(1) {
         grid-area: first;
         padding: 273px 88px;
-        background-image: url(../../images/guide-1-pc.png);
+        @include bg-img("../../images/guide-1-pc.png", center);
       }
 
       &:nth-child(2) {

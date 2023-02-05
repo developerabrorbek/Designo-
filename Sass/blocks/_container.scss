@@ -21,12 +21,12 @@ body {
     }
 }
 
-// @media only screen and (min-width: 576px) {
-//     .container {
-//         min-width: 576px;
-//         padding: 0 20px;
-//     }
-// }
+@media only screen and (min-width: 576px) {
+    .container {
+        min-width: 576px;
+        padding: 0 20px;
+    }
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -36,12 +36,12 @@ body {
     }
 }
 
-// @media only screen and (min-width: 992px) {
-//     .container {
-//         min-width: 992px;
-//         padding: 0 20px;
-//     }
-// }
+@media only screen and (min-width: 992px) {
+    .container {
+        min-width: 992px;
+        padding: 0 30px;
+    }
+}
 
 @media only screen and (min-width: 1200px) {
     .container {

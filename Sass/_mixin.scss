@@ -1,0 +1,14 @@
+@mixin bg-img($url, $position){
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-position: $position;
+}
+
+
+.link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+}
