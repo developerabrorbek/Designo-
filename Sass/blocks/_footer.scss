@@ -108,6 +108,11 @@
         mix-blend-mode: normal;
         opacity: 0.5;
         letter-spacing: 1px;
+
+        & a{
+          text-decoration: none;
+          color: inherit;
+        }
       }
     }
 

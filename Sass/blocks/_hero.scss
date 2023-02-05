@@ -159,6 +159,12 @@
       text-transform: uppercase;
       color: #333136;
       margin-top: 40px;
+
+      &:hover{
+        background-color: #FFAD9B;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }

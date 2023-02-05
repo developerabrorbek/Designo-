@@ -1076,6 +1076,10 @@ body {
   opacity: 0.5;
   letter-spacing: 1px;
 }
+.footer-body__contact-item a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer-body__socials {
   display: flex;
   align-items: center;
@@ -1282,6 +1286,11 @@ body {
   color: #333136;
   margin-top: 40px;
 }
+.hero-form__btn:hover {
+  background-color: #FFAD9B;
+  color: white;
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 768px) {
   .hero {
@@ -1427,10 +1436,42 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+.location-list__body-btn:hover {
+  background-color: #FFAD9B;
+}
 
+@media only screen and (min-width: 576px) {
+  .location-list {
+    margin-bottom: 69px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .location-list {
     margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .location-lists {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .location-list {
+    flex-shrink: 0;
+    width: 50%;
+    margin-bottom: 80px;
+  }
+  .location-list__img {
+    width: 202px;
+    height: 202px;
+  }
+  .location-list__img .back-1 {
+    left: calc(50% - 115px);
+  }
+  .location-list__img .back-2 {
+    left: calc(50% - 100px);
+  }
+  .location-list__img .back-3 {
+    left: calc(50% - 115px);
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1443,6 +1484,7 @@ body {
     justify-content: space-around;
   }
   .location-list {
+    width: auto;
     margin-bottom: 80px;
   }
 }/*# sourceMappingURL=main.css.map */

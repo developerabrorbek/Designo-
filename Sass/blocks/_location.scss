@@ -107,9 +107,22 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #ffffff;
+
+        &:hover{
+            background-color: #FFAD9B;
+        }
       }
     }
   }
+}
+
+@media only screen and (min-width: 576px) {
+    .location {
+
+        &-list {
+          margin-bottom: 69px;
+        }
+      }
 }
 
 @media only screen and (min-width: 768px) {
@@ -117,6 +130,39 @@
 
         &-list {
           margin-bottom: 80px;
+        }
+      }
+}
+
+@media only screen and (min-width: 992px) {
+    .location {
+
+        &-lists{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &-list {
+            flex-shrink: 0;
+            width: 50%;
+          margin-bottom: 80px;
+
+          &__img {
+            width: 202px;
+            height: 202px;
+      
+            .back-1 {
+              left: calc(50% - 115px);
+            }
+      
+            .back-2 {
+              left: calc(50% - 100px);
+            }
+      
+            .back-3 {
+              left: calc(50% - 115px);
+            }
+          }
         }
       }
 }
@@ -132,6 +178,7 @@
         }
 
         &-list {
+            width: auto;
           margin-bottom: 80px;
         }
       }
