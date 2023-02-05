@@ -891,16 +891,17 @@ body {
     margin-bottom: 67px;
     background-image: url(../../images/advantage-tablet-back.png);
     background-repeat: no-repeat;
-    background-position: 44px 40px;
+    background-position: center;
   }
   .advantage-lists {
     row-gap: 56px;
   }
   .advantage-list {
-    width: 100%;
+    max-width: 992px;
     margin-bottom: 0;
     justify-content: space-between;
     flex-direction: row;
+    column-gap: 42px;
   }
   .advantage-list__body {
     width: 439px;
@@ -959,7 +960,7 @@ body {
   background: #e7816b;
   background-image: url(../../images/talk-back2.png);
   background-repeat: no-repeat;
-  background-position: -130px center;
+  background-position: right center;
   border-radius: 15px;
 }
 .talk-more {
@@ -971,20 +972,20 @@ body {
   color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 568px) {
   .talk__inner {
     padding: 52px 52px;
-    background-image: none;
   }
   .talk-body {
     padding: 0;
   }
   .talk-body__title {
+    font-size: 36px;
     margin-top: 0;
     width: 335px;
   }
   .talk-body-subtitle {
-    width: 573px;
+    width: 450px;
     margin-bottom: 32px;
   }
   .talk-info {
@@ -993,9 +994,20 @@ body {
     align-items: center;
   }
 }
+@media only screen and (min-width: 768px) {
+  .talk__inner {
+    background-image: none;
+  }
+  .talk-body__title {
+    font-size: 40px;
+  }
+  .talk-body-subtitle {
+    width: 573px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .talk__inner {
-    padding: 48px 95px;
+    padding: 38px 95px;
     background-image: url(../../images/talk-back-3.png);
     background-position: 236px center;
   }

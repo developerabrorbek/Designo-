@@ -8,7 +8,7 @@
     background: #e7816b;
     background-image: url(../../images/talk-back2.png);
     background-repeat: no-repeat;
-    background-position: -130px center;
+    background-position: right center;
     border-radius: 15px;
   }
 
@@ -23,12 +23,11 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 568px) {
   .talk {
   
     &__inner {
       padding: 52px 52px;
-      background-image: none;
     }
 
     &-body{
@@ -36,12 +35,13 @@
       padding: 0;
       
       &__title{
+        font-size: 36px;
         margin-top: 0;
         width: 335px;
       }
 
       &-subtitle{
-        width: 573px;
+        width: 450px;
         margin-bottom: 32px;
       }
     }
@@ -54,12 +54,35 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .talk {
+    
+    &__inner{
+      background-image: none;
+    }
+  
+
+    &-body{
+
+      
+      &__title{
+        font-size: 40px;
+      }
+
+      &-subtitle{
+        width: 573px;
+      }
+    }
+
+  }
+}
+
 
 @media only screen and (min-width: 1200px) {
   .talk {
   
     &__inner {
-      padding: 48px 95px;
+      padding: 38px 95px;
       background-image: url(../../images/talk-back-3.png);
       background-position: 236px center;
     }

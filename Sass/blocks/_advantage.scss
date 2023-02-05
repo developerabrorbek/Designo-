@@ -105,7 +105,7 @@
         margin-bottom: 67px;
         background-image: url(../../images/advantage-tablet-back.png);
         background-repeat: no-repeat;
-        background-position: 44px 40px;
+        background-position: center;
       
       
         &-lists {
@@ -113,10 +113,11 @@
         }
       
         &-list {
-          width: 100%;
+          max-width: 992px;
           margin-bottom: 0;
           justify-content: space-between;
           flex-direction: row;
+          column-gap: 42px;
       
           &__body {
             width: 439px;
